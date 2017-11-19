@@ -45,19 +45,19 @@ const int shutter = A2;
 
 ## Action
 * Here are some rules for shutter to work
- * In Manual focus mode
-  * As soon as both focus and shutter are pressed, shutter will be release (a click will happen)
-  * Though a quick release of focus and/or shutter will work (`fslr`), it may fail at times
-  * The most safest option is `fs1lr` (faster option is `fs0lr` or `fs00lr`)
-  * For sequencial clicks focus can be locked and only shutter can be pressed/released (`fs1r9999s1r9999s1rl`)
-  * The delay between one click and other click depends on the shutter speed and the speed of memory card
- * In Auto focus mode
-  * If only focus is pressed, the system will *try* to focus. Depends on AF-A/AF-S/AF-C.
-  * If *AF-C Priority selection*(mostly in menu a*) is set to shutter
-   * With focus pressed, shutter will be release immediately when `f` is hit (even without focus)
-   * The option `fslr` may work but safe optio is `fs0lr` or `fs00lr` or `fs1lr`
-  * If *AF-C Priority selection*(mostly in menu a*) is set to shutter
-   * With focus pressed, shutter will NOT be release until focus is achieved
-   * The option `fslr` will not work almost ever. `lr` or `r` should be only sent when click is done
-   
+  * In Manual focus mode
+    * As soon as both focus and shutter are pressed, shutter will be release (a click will happen)
+    * Though a quick release of focus and/or shutter will work (`fslr`), it may fail at times
+    * The most safest option is `fs1lr` (faster option is `fs0lr` or `fs00lr`)
+    * For sequencial clicks focus can be locked and only shutter can be pressed/released (`fs1r9999s1r9999s1rl`)
+    * The delay between one click and other click depends on the shutter speed and the speed of memory card
+  * In Auto focus mode
+    * If only focus is pressed, the system will *try* to focus. Depends on AF-A/AF-S/AF-C.
+    * If *AF-C Priority selection*(mostly in menu a*) is set to shutter
+      * With focus pressed, shutter will be release immediately when `f` is hit (even without focus)
+      * The option `fslr` may work but safe optio is `fs0lr` or `fs00lr` or `fs1lr`
+    * If *AF-C Priority selection*(mostly in menu a*) is set to shutter
+      * With focus pressed, shutter will NOT be release until focus is achieved
+      * The option `fslr` will not work almost ever. `lr` or `r` should be only sent when click is done
+
 * In sort, focus and release will work just like physical button (and respective physical buttons will not work when pressed via circuit)
