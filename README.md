@@ -18,7 +18,7 @@ Ground            Ground
 Focus             A1 or any one GPIO (even Analog ping will do)
 Shutter           A2 or any one GPIO other then one used for Focus(even Analog ping will do)
 
-## Action
+## Preparation for the Action
 Once the hardware setup is ready...
 - open the program Nikon_Shutter_Serial in Arduino IDE
 - Change the following pin assignments as per your need.
@@ -29,3 +29,19 @@ const int shutter = A2;
 - Upload the program top Arduino
 - Open the Serial Monitor
 - Wait for the message `...Welcome to Nikon Shutter Serial...`
+- Send following commands for action (case sensitive)
+
+`f` : set focus (press focus button), focusing will not work in manual focus mode
+`l` : leave focus (release focus button)
+`s` : press shutter button
+`r` : release shutter button
+`1` : delay of 100ms
+`2` : delay of 200ms
+.
+.
+.
+`9` : delay of 900ms
+any other charactor: delay of 10ms
+
+## Action
+- 
