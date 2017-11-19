@@ -1,2 +1,3 @@
-# nikonWiredShutter
-Controlling Wired Shutter using Arduino for Nikon camera
+# Control Wired Shutter of Nikon camera using Arduino
+This is a simple arduino based program for controlling wired shutter using arduni for Nikon cameras (Tested with D5200)
+
